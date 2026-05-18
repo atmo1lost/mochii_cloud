@@ -90,39 +90,19 @@ const G_DATA = [
     rm: { os: "Windows 8", cpu: "Intel Core i3", ram: "8 GB RAM", gpu: "GTX 1050" },
     rr: { os: "Windows 10", cpu: "Intel Core i5 8600K", ram: "16 GB RAM", gpu: "GTX 1070" }
   },
-  {
-    id: "MC120",
-
-    n: "Minecraft 1.20 Browser (Eaglercraft)",
-
-    dev: "Mojang",
-
-    url: "https://yee.pages.dev/#/bM9yZS9tb3JlL21vZGRlZC91YWdseWpZ",
-
-    img: "https://cdn.mos.cms.futurecdn.net/AZAwyhrARyZhc69hMXAy3L.jpg",
-
-    bg: "https://cdn.mos.cms.futurecdn.net/AZAwyhrARyZhc69hMXAy3L.jpg",
-
-    ach: 45,
-
-    tags: ["Minecraft", "Open World", "Sandbox", "Multiplayer"],
-
-    desc: "Minecraft is a sandbox survival game where players can build, explore, craft, and survive in an infinite blocky world. Creds to the guy on youtube for the snippet! ",
-
-    rn: {
-        os: "Windows 10 / ChromeOS / Linux",
-        cpu: "Intel Core i3-2100",
-        ram: "4 GB",
-        gpu: "Intel HD Graphics 4000"
-    },
-
-    rr: {
-        os: "Windows 11 / macOS",
-        cpu: "Intel Core i5-8400",
-        ram: "8 GB",
-        gpu: "GTX 1050 Ti / RX 570"
-    }
-},
+   { 
+    id: 'MC120', 
+    n: "Minecraft 1.20 Browser (Eagler Craft)", 
+    dev: "Some random dude", 
+    url: "https://yee.pages.dev/#/bW9yZS9tb3JlL21vZGRlZC9lYWdseWpz", // game link
+    img: "https://cdn.mos.cms.futurecdn.net/AZ4nyhrARyZhc69hMXAy3L.jpg",  // thumbnail
+    bg: "https://cdn.mos.cms.futurecdn.net/AZ4nyhrARyZhc69hMXAy3L.jpg", // thumbnail
+    ach: 45, 
+    tags: ["Minecraft", "Open World", "RPG", "Sci-fi"],
+    desc: "Minecraft is a critically acclaimed 3D sandbox video game developed by the Swedish studio Mojang Studios. It has no specific goals, offering players absolute freedom to explore, build, and craft. The game world is made of 3D blocks representing materials like dirt, stone, and wood.",
+    rm: { os: "Potato", cpu: "Potato", ram: "Potato", gpu: "Potato" },
+    rr: { os: "Monster", cpu: "Monster", ram: "Monster", gpu: "Monster" }
+  },
   { 
     id: '1015', 
     n: "GUILTY GEAR -STRIVE-", 
