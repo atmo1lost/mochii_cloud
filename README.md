@@ -6,4 +6,4 @@ Welcome to Cine-Cloud Repo!
 WE ARE FINALLY PUBLIC! Feel free to copy or fork, or whatever! :)
 
 
-# Small Update: Added Minecraft Credits to Lingon213 on YT!
+# Update V1.5: Added Controller, and Mobile/Ipad support! with some ui upgrades
