@@ -598,7 +598,7 @@ body {
         </div>
         <div class="f-box" id="mail-wrapper">
           <h3>need a temp email?</h3>
-          <iframe class="f-mail" src="https://tempmail.ing/"></iframe> <! this is the link we iframe to the user to give them a temp link !>
+          <iframe class="f-mail" src="https://temp-mail.app/"></iframe> <! this is the link we iframe to the user to give them a temp link !>
         </div>
       </div>
     </div>
@@ -806,8 +806,8 @@ body {
     <div class="popup-icon-container" style="background:rgba(255,77,77,0.1);border:1px solid rgba(255,77,77,0.2);">
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ff4d4d" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
     </div>
-    <h2>Session Active</h2>
-    <p>You're already playing a game! Make sure to exit your current session before starting a new one.</p> <! feel like i had to add thos cuz why not !>
+    <h2>session active</h2>
+    <p>your already playing a game! make sure to exit your current session before starting a new one.</p> <! feel like i had to add thos cuz why not !>
     <div class="popup-btn-row">
       
       <button class="popup-btn primary" style="width: 100%;" onclick="hidePopup('p-sess-block')">Got it</button>
@@ -821,19 +821,19 @@ body {
     <div class="popup-icon-container" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1);">
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
     </div>
-    <h2>Developer Embed</h2>
-    <p style="font-size:13px; color:#ccc;">You can skip to the easy work and use Figure Cloud to play PC games.</p>
+    <h2>developer embed</h2>
+    <p style="font-size:13px; color:#ccc;">you can skip to the easy work and use mochii cloud to play PC games.</p>
     <textarea id="embed-code-area" readonly style="width:100%; height:120px; background:rgba(0,0,0,0.5); color:#aaa; border:1px solid var(--border); border-radius:12px; padding:15px; font-family:monospace; font-size:12px; resize:none; margin-bottom:20px; box-sizing:border-box;"></textarea>
     <div class="popup-btn-row">
-      <button class="popup-btn secondary" onclick="hidePopup('p-embed-block')">Close</button>
-      <button class="popup-btn primary" onclick="copyEmbedCode()">Copy Code</button>
+      <button class="popup-btn secondary" onclick="hidePopup('p-embed-block')">close</button>
+      <button class="popup-btn primary" onclick="copyEmbedCode()">copy code</button>
     </div>
   </div>
 </div>
 
 <div id="m-a2hs" style="position:fixed; bottom:-200px; left:0; width:100%; background:var(--glass); backdrop-filter:blur(30px); border-top:1px solid var(--border); border-top-left-radius:24px; border-top-right-radius:24px; padding:25px; box-sizing:border-box; z-index:99999999999; transition:bottom 0.5s cubic-bezier(0.16,1,0.3,1); box-shadow:0 -10px 40px rgba(0,0,0,0.5);">
   <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-    <h3 style="margin:0; color:#fff; font-size:16px;">Add Figure to Home Screen</h3>
+    <h3 style="margin:0; color:#fff; font-size:16px;">add mochii cloud to home screen</h3>
     <svg onclick="clsA2hs()" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#aaa" stroke-width="2" style="cursor:pointer;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
   </div>
   <p style="margin:0; font-size:13px; color:#aaa; line-height:1.6;">For the ultimate fullscreen experience, tap <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="vertical-align:middle;margin:0 2px;"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><polyline points="16 6 12 2 8 6"></polyline><line x1="12" y1="2" x2="12" y2="15"></line></svg> (iOS) or <b style="color:#fff;">&#8942;</b> (Android) and select <b>Add to Home Screen</b>.</p>
@@ -893,7 +893,7 @@ window.addEventListener('DOMContentLoaded',()=>{
   let isStandAlone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone || document.referrer.includes('android-app://');
   
   if(isMobile) { 
-    setTimeout(() => { showToast("Welcome to Figure - Mobile"); }, 2500); 
+    setTimeout(() => { showToast("welcome to mochii cloud - mobile"); }, 2500); 
     if(!localStorage.getItem('fig_a2hs') && !isStandAlone) {
       setTimeout(() => {
         let el = document.getElementById('m-a2hs');
@@ -1046,7 +1046,7 @@ function updateFocusUI() {
   if(focusedEl) focusedEl.classList.add('gp-focus');
 }
 window.addEventListener("gamepadconnected", (e) => {
-  showToast("🎮 Most games should have controller support");
+  showToast("most games should have controller support");
   gpInit();
 });
 
@@ -1094,7 +1094,7 @@ function rendertheBanner(){
 
 function makethecard(g,type){
   let tStr=formatPlaytimeHover(lsDB[g.id]?lsDB[g.id].t:0);
-  let th=`<div class="c-time-hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>Time Played: ${tStr}</div>`;
+  let th=`<div class="c-time-hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>time played: ${tStr}</div>`;
   let src=(g.n+' '+(g.tags||[]).join(' ')+' '+g.dev).toLowerCase();
   return `<div class="c-${type}" onclick="opMdl('${g.id}')" data-search="${src}"><img src="${type==='h'?g.bg:g.img}"><div class="c-inf"><h3>${g.n}</h3><span>${g.dev}</span>${th}</div></div>`;
 }
@@ -1316,7 +1316,7 @@ function getEmbedCode(g){
 }
 
 function showEmbedPopup(){if(!cxG)return;document.getElementById('embed-code-area').value=getEmbedCode(cxG);showPopup('p-embed-block');}
-function copyEmbedCode(){let a=document.getElementById('embed-code-area');a.select();a.setSelectionRange(0,99999);navigator.clipboard.writeText(a.value);showToast("Embed code copied!");}
+function copyEmbedCode(){let a=document.getElementById('embed-code-area');a.select();a.setSelectionRange(0,99999);navigator.clipboard.writeText(a.value);showToast("embed code copied!");}
 
 document.addEventListener('pointerlockchange',()=>{let o=document.getElementById('pointer-lock-overlay');if(document.getElementById('game-layer').style.display==='block'){if(!document.pointerLockElement)o.style.display='flex';else o.style.display='none';}});
 document.getElementById('pointer-lock-overlay').addEventListener('click',()=>{let f=document.getElementById('gF');f.focus();if(f.requestPointerLock)f.requestPointerLock();else if(document.body.requestPointerLock)document.body.requestPointerLock();if(!document.fullscreenElement){let gl=document.getElementById('game-layer');if(gl.requestFullscreen)gl.requestFullscreen();else if(gl.webkitRequestFullscreen)gl.webkitRequestFullscreen();}});
